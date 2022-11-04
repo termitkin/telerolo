@@ -1,0 +1,19 @@
+{
+  "name": "telerolo",
+  "version": "0.1.1",
+  "description": "Send text message to telegram",
+  "main": "index.js",
+  "type": "module",
+  "author": "termitkin",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "send message to telegram"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "prettier": "^2.7.1"
+  }
+}
