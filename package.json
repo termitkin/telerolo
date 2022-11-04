@@ -2,6 +2,7 @@
   "name": "telerolo",
   "version": "0.1.1",
   "description": "Send text message to telegram",
+  "homepage": "https://github.com/termitkin/telerolo",
   "main": "index.js",
   "type": "module",
   "author": "termitkin",
