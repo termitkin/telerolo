@@ -2,7 +2,7 @@ import { sendMessage } from './modules/sendMessage.js';
 import { checkConfig } from './modules/checkConfig.js';
 import type { TeleroloConfig } from '../telerolo.js';
 
-const main = async (teleroloConfig: TeleroloConfig): Promise<boolean> => {
+const telerolo = async (teleroloConfig: TeleroloConfig): Promise<boolean> => {
   try {
     const config = checkConfig(teleroloConfig);
 
@@ -18,4 +18,4 @@ const main = async (teleroloConfig: TeleroloConfig): Promise<boolean> => {
   }
 };
 
-export { main };
+export { telerolo };

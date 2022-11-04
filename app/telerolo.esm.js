@@ -1,6 +1,6 @@
 import { sendMessage } from './modules/sendMessage.js';
 import { checkConfig } from './modules/checkConfig.js';
-const main = async (teleroloConfig) => {
+const telerolo = async (teleroloConfig) => {
     try {
         const config = checkConfig(teleroloConfig);
         return sendMessage(config);
@@ -13,5 +13,5 @@ const main = async (teleroloConfig) => {
         return false;
     }
 };
-export { main };
+export { telerolo };
 //# sourceMappingURL=telerolo.esm.js.map

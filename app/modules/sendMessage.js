@@ -11,7 +11,10 @@ const sendMessage = async (teleroloConfig) => {
         return true;
     })
         .catch((e) => {
-        console.log(`Error: ${e}`);
+        if (e instanceof Error) {
+            console.log(e.message);
+        }
+        console.log(e);
         return false;
     });
 };
