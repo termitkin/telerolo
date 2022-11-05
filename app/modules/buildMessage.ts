@@ -1,7 +1,7 @@
 import type { Message, TeleroloConfig } from './../../telerolo.js';
 
 const escapeSpecialChars = (str: string): string => {
-  return str.replace(/([_*\[\]()~`>#+-=|{}.!])/g, '\\$1');
+  return str.replace(/([_~`>#+-=|{}.!])/g, '\\$1');
 };
 
 const buildMessageBody = (message: Message): string => {
