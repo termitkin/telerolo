@@ -13,7 +13,7 @@ const buildMessage = (teleroloConfig: TeleroloConfig): string => {
     chat_id: teleroloConfig.chatId,
     parse_mode: teleroloConfig.parseMode,
     disable_web_page_preview: 'false',
-    text: buildMessageBody(teleroloConfig.message),
+    text: teleroloConfig.message,
   }).toString();
 };
 
