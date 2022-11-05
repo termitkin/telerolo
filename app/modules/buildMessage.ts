@@ -12,7 +12,7 @@ const buildMessage = (teleroloConfig: TeleroloConfig): string => {
   return new URLSearchParams({
     chat_id: teleroloConfig.chatId,
     parse_mode: teleroloConfig.parseMode,
-    disable_web_page_preview: 'false',
+    disable_web_page_preview: false,
     text: teleroloConfig.message,
   }).toString();
 };
