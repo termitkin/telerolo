@@ -34,7 +34,7 @@ const telerolo = new Telerolo({
 async function sendMyMessage() {
   try {
     await telerolo.sendMessage({
-      chatId: '@your_channel_name', // or a chat ID like '-1001234567890'
+      chatId: '-1001234567890', // a chat ID like '-1001234567890'
       message: 'Hello, world! 🚀',
     });
   } catch (error) {
