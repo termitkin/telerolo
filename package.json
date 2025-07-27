@@ -1,20 +1,30 @@
 {
   "name": "telerolo",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Send text message to telegram",
   "homepage": "https://github.com/termitkin/telerolo",
-  "main": "index.js",
+  "main": "dist/telerolo.esm.js",
+  "types": "dist/telerolo.esm.d.ts",
   "type": "module",
+  "files": [
+    "dist"
+  ],
   "author": "termitkin",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test": "vitest"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   },
   "keywords": [
     "send message to telegram"
   ],
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^18.11.9",
-    "prettier": "^2.7.1"
+    "@types/node": "18.0.0",
+    "prettier": "3.6.2",
+    "typescript": "5.8.3",
+    "vitest": "3.2.4"
   }
 }
