@@ -1,10 +1,10 @@
 {
   "name": "telerolo",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Send text message to telegram",
   "homepage": "https://github.com/termitkin/telerolo",
-  "main": "dist/telerolo.esm.js",
-  "types": "dist/telerolo.esm.d.ts",
+  "main": "dist/Telerolo.js",
+  "types": "dist/Telerolo.d.ts",
   "type": "module",
   "files": [
     "dist"
