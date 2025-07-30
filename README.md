@@ -6,26 +6,26 @@ A simple and lightweight Node.js library for sending messages to Telegram channe
 
 ## 📑 Table of Contents
 
-- [✨ Features](#-features)
-- [📋 Requirements](#-requirements)
-- [📦 Installation](#-installation)
+- [Features](#-features)
+- [Requirements](#-requirements)
+- [Installation](#-installation)
 - [🚀 Quick Start](#-quick-start)
-- [📖 Detailed Usage](#-detailed-usage)
-- [🔧 API Reference](#-api-reference)
-- [🆔 Getting Chat ID](#-getting-chat-id)
-- [🛠️ Usage Examples](#️-usage-examples)
-- [🔒 Security](#-security)
-- [🧪 Testing](#-testing)
-- [📄 License](#-license)
+- [Detailed Usage](#-detailed-usage)
+- [API Reference](#-api-reference)
+- [Getting Chat ID](#-getting-chat-id)
+- [Usage Examples](#️-usage-examples)
+- [Security](#-security)
+- [Testing](#-testing)
+- [License](#-license)
 
 ## ✨ Features
 
-- 🚀 Simple class-based API
-- 📝 Written in TypeScript with full type support
-- 🔧 Uses native `fetch` from Node.js
-- 📦 No unnecessary dependencies
-- 🛡️ Parameter validation
-- 🎯 Support for various parsing modes (Markdown, HTML)
+- Simple class-based API
+- Written in TypeScript with full type support
+- Uses native `fetch` from Node.js
+- No unnecessary dependencies
+- Parameter validation
+- Support for various parsing modes (Markdown, HTML)
 
 ## 📋 Requirements
 
@@ -150,18 +150,26 @@ type ParseMode = 'Markdown' | 'MarkdownV2' | 'HTML';
 
 ## 🆔 Getting Chat ID
 
-### For Channel:
+### Easy Method (Recommended):
+Use our dedicated bot [@get_my_channel_id_bot](https://t.me/get_my_channel_id_bot):
+1. Add the bot to your channel or group as administrator
+2. Send `@get_my_channel_id_bot` message to the channel/group
+3. The bot will reply with the chat ID
+
+### Manual Method:
+
+#### For Channel:
 1. Add bot to channel as administrator
 2. Send any message to the channel
 3. Visit: `https://api.telegram.org/bot<YOUR_BOT_TOKEN>/getUpdates`
 4. Find `chat.id` in the response
 
-### For Group:
+#### For Group:
 1. Add bot to the group
 2. Send a message to the group
 3. Check updates via API as mentioned above
 
-### For Private Chat:
+#### For Private Chat:
 - Chat ID will be a positive number (e.g., `123456789`)
 - For channels and groups - negative number (e.g., `-1001234567890`)
 
