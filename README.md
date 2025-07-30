@@ -9,7 +9,7 @@ A simple and lightweight Node.js library for sending messages to Telegram channe
 - [Features](#-features)
 - [Requirements](#-requirements)
 - [Installation](#-installation)
-- [🚀 Quick Start](#-quick-start)
+- [Quick Start](#-quick-start)
 - [Detailed Usage](#-detailed-usage)
 - [API Reference](#-api-reference)
 - [Getting Chat ID](#-getting-chat-id)
