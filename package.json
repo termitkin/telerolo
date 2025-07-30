@@ -26,7 +26,9 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "vitest"
+    "test": "vitest",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix"
   },
   "engines": {
     "node": ">=18.0.0"
@@ -45,6 +47,10 @@
   "license": "MIT",
   "devDependencies": {
     "@types/node": "18.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.38.0",
+    "@typescript-eslint/parser": "^8.38.0",
+    "eslint": "^9.32.0",
+    "eslint-config-prettier": "^10.1.8",
     "prettier": "3.6.2",
     "typescript": "5.8.3",
     "vitest": "3.2.4"
