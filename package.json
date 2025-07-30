@@ -1,15 +1,29 @@
 {
   "name": "telerolo",
   "version": "0.1.11",
-  "description": "Send text message to telegram",
+  "description": "Send formatted messages to Telegram channels and chats via bot API. Lightweight TypeScript library with Markdown/HTML support and parameter validation",
   "homepage": "https://github.com/termitkin/telerolo",
   "main": "dist/Telerolo.js",
   "types": "dist/Telerolo.d.ts",
   "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/Telerolo.d.ts",
+      "import": "./dist/Telerolo.js",
+      "default": "./dist/Telerolo.js"
+    }
+  },
   "files": [
     "dist"
   ],
   "author": "termitkin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/termitkin/telerolo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/termitkin/telerolo/issues"
+  },
   "scripts": {
     "build": "tsc",
     "test": "vitest"
@@ -18,7 +32,15 @@
     "node": ">=18.0.0"
   },
   "keywords": [
-    "send message to telegram"
+    "telegram",
+    "bot",
+    "messaging",
+    "api",
+    "typescript",
+    "nodejs",
+    "send message to telegram",
+    "telegram bot",
+    "notification"
   ],
   "license": "MIT",
   "devDependencies": {
